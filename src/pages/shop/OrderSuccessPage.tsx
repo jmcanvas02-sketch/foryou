@@ -5,7 +5,7 @@ import { formatCurrency } from "../../utils/currency";
 
 function readLastOrder(): LocalOrder | null {
   try {
-    const raw = sessionStorage.getItem("ingiday-last-order");
+    const raw = sessionStorage.getItem("foryou-last-order");
     return raw ? (JSON.parse(raw) as LocalOrder) : null;
   } catch {
     return null;
@@ -51,7 +51,7 @@ export default function OrderSuccessPage() {
         </p>
 
         <h1 className="mx-auto mt-3 max-w-2xl text-4xl font-black tracking-[-0.055em] text-[var(--sf-ink)] sm:text-5xl">
-          InGiDay đã nhận được đơn hàng ♡
+          For You đã nhận được đơn hàng ♡
         </h1>
 
         <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-[var(--sf-ink-soft)] sm:text-base">

@@ -107,7 +107,7 @@ export default function AdminLayout() {
             to="/admin"
             className="text-2xl font-black tracking-tight"
           >
-            InGiDay Admin
+            For You Admin
           </Link>
           <button
             type="button"
@@ -170,7 +170,7 @@ export default function AdminLayout() {
                 Quản trị
               </p>
               <p className="font-black text-[#091d2e]">
-                InGiDay
+                For You
               </p>
             </div>
           </div>

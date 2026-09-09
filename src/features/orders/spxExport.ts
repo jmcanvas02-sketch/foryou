@@ -159,7 +159,7 @@ export async function exportOrdersToSpx(
 
   const { Workbook } = await import("exceljs");
   const workbook = new Workbook();
-  workbook.creator = "InGiDay";
+  workbook.creator = "For You";
   workbook.created = new Date();
 
   const worksheet = workbook.addWorksheet("SPX_Don_hang", {

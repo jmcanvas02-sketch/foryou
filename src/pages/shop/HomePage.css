@@ -1401,7 +1401,7 @@
     animation: none;
   }
 }
-/* === INGIDAY PREMIUM COLLECTION REDESIGN === */
+/* === FOR YOU PREMIUM COLLECTION REDESIGN === */
 
 .home-premium__collection-card {
   --collection-accent: #ff5f8f;
@@ -1643,7 +1643,7 @@
     grid-template-columns: 1fr;
   }
 }
-/* === INGIDAY HOME PRODUCT SECTIONS === */
+/* === FOR YOU HOME PRODUCT SECTIONS === */
 
 .home-cute__catalog-sections {
   display: grid;

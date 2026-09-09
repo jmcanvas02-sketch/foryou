@@ -540,7 +540,7 @@ async function prepareWebsiteLogoPng(file: File) {
   );
   const safeBaseName = safeImageBaseName(
     file,
-    "ingiday-logo",
+    "foryou-logo",
   );
 
   return new File(
@@ -607,7 +607,7 @@ async function prepareFaviconPng(file: File) {
   );
   const safeBaseName = safeImageBaseName(
     file,
-    "ingiday-favicon",
+    "foryou-favicon",
   );
 
   return new File(
@@ -690,7 +690,7 @@ async function prepareSocialShareJpeg(file: File) {
   );
   const safeBaseName = safeImageBaseName(
     file,
-    "ingiday-share",
+    "foryou-share",
   );
 
   return new File(

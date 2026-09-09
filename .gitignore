@@ -28,10 +28,10 @@ dist-ssr
 node_modules/
 dist/
 audit/
-ingiday-step-*.ps1
-ingiday-fix-*.ps1
+foryou-step-*.ps1
+foryou-fix-*.ps1
 lint-*.txt
-ingiday-rollback-*.ps1
+foryou-rollback-*.ps1
 .dev.vars
 
 .wrangler/

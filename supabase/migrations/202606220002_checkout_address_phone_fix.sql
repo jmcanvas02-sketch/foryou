@@ -9,7 +9,7 @@ volatile
 set search_path = public, extensions, pg_temp
 as $$
   select
-    'IGD-' ||
+    'FY-' ||
     to_char(clock_timestamp(), 'YYMMDDHH24MISS') ||
     '-' ||
     upper(

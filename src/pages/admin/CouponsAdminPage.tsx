@@ -249,7 +249,7 @@ export default function CouponsAdminPage() {
                 })
               }
               className="mt-2 h-11 w-full rounded-xl border border-[#d7dee6] px-3 font-normal outline-none focus:border-[#006397]"
-              placeholder="INGIDAY10"
+              placeholder="FORYOU10"
             />
           </label>
 

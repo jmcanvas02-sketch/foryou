@@ -93,7 +93,7 @@ export function AdminAuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let mounted = true;
 
-    localStorage.removeItem("ingiday-admin-auth");
+    localStorage.removeItem("foryou-admin-auth");
 
     void supabase.auth.getSession().then(({ data, error }) => {
       if (!mounted) return;

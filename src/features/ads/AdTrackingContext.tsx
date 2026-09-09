@@ -38,8 +38,8 @@ import type { AdPlatform } from "../../types/ads";
 import type { CartItem } from "../../types/cart";
 
 const PLATFORMS: AdPlatform[] = ["meta", "tiktok"];
-const CHECKOUT_EVENT_STORAGE_PREFIX = "ingiday-ads-checkout-event-v1";
-const PURCHASE_SENT_STORAGE_PREFIX = "ingiday-ads-purchase-sent-v1";
+const CHECKOUT_EVENT_STORAGE_PREFIX = "foryou-ads-checkout-event-v1";
+const PURCHASE_SENT_STORAGE_PREFIX = "foryou-ads-purchase-sent-v1";
 
 type AdTrackingContextValue = {
   trackPageView: (input: TrackPageViewInput) => Promise<void>;

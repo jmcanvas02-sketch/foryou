@@ -4,11 +4,11 @@ import {
 } from "./supabase-server";
 import type { AdsFunctionEnv } from "./supabase-server";
 
-const DEFAULT_STORE_NAME = "InGiDay";
+const DEFAULT_STORE_NAME = "For You";
 const DEFAULT_TITLE =
-  "InGiDay | Sản phẩm in 3D đáng yêu";
+  "For You | Sản phẩm in 3D đáng yêu";
 const DEFAULT_DESCRIPTION =
-  "Khám phá móc khóa, mô hình mini và các sản phẩm in 3D độc đáo từ InGiDay.";
+  "Khám phá móc khóa, mô hình mini và các sản phẩm in 3D độc đáo từ For You.";
 const DEFAULT_FAVICON_URL = "/favicon.svg";
 
 type StoreSettingsMetadataRow = {

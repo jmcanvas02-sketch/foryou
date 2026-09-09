@@ -1,4 +1,4 @@
-﻿-- InGiDay - Supabase schema
+-- For You - Supabase schema
 -- Chạy toàn bộ file trong Supabase SQL Editor.
 -- Không đặt secret key hoặc service_role key trong file này.
 
@@ -26,7 +26,7 @@ language sql
 volatile
 as $$
   select
-    'IGD-' ||
+    'FY-' ||
     to_char(clock_timestamp(), 'YYMMDDHH24MISS') ||
     '-' ||
     upper(substr(encode(gen_random_bytes(4), 'hex'), 1, 6));
@@ -353,7 +353,7 @@ create index if not exists banners_position_sort_idx
 
 create table if not exists public.store_settings (
   id smallint primary key default 1 check (id = 1),
-  shop_name text not null default 'InGiDay',
+  shop_name text not null default 'For You',
   logo_url text,
   favicon_url text,
   phone text,

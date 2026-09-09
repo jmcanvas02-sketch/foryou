@@ -104,7 +104,7 @@ export default function CartPage() {
               <BagIcon />
             </span>
             <p className="mt-7 text-[11px] font-black uppercase tracking-[0.16em] text-[var(--sf-pink-strong)]">
-              Giỏ hàng InGiDay
+              Giỏ hàng For You
             </p>
             <h1 className="mt-3 text-3xl font-black tracking-[-0.045em] text-[var(--sf-ink)] sm:text-4xl">
               Giỏ hàng đang trống

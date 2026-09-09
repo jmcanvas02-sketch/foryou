@@ -1,4 +1,4 @@
-﻿/* eslint-disable react-hooks/set-state-in-effect */
+/* eslint-disable react-hooks/set-state-in-effect */
 import {
   useEffect,
   useMemo,
@@ -32,7 +32,7 @@ import type { Product } from "../../types/product";
 import { formatCurrency } from "../../utils/currency";
 import "./ProductDetailPage.css";
 
-const PRODUCT_VIDEO_VOLUME_KEY = "ingiday-product-video-volume";
+const PRODUCT_VIDEO_VOLUME_KEY = "foryou-product-video-volume";
 
 function BagIcon() {
   return (
@@ -92,11 +92,11 @@ export default function ProductDetailPage() {
 
   usePageMeta({
     title: product
-      ? `${product.name} | InGiDay`
-      : "Sản phẩm | InGiDay",
+      ? `${product.name} | For You`
+      : "Sản phẩm | For You",
     description: product?.description
       ? product.description.slice(0, 160)
-      : "Chi tiết sản phẩm InGiDay.",
+      : "Chi tiết sản phẩm For You.",
     canonicalPath: product
       ? `/san-pham/${product.slug}`
       : `/san-pham/${slug}`,
@@ -1510,7 +1510,7 @@ export default function ProductDetailPage() {
           <div className="product-detail__trust-heading">
             <span aria-hidden="true">✦</span>
             <div>
-              <p>Cam kết InGiDay</p>
+              <p>Cam kết For You</p>
               <h2>An tâm hơn khi đặt sản phẩm in 3D</h2>
             </div>
           </div>

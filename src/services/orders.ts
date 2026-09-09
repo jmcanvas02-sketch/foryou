@@ -2,9 +2,9 @@ import { supabase } from "../lib/supabase";
 import type { LocalOrder } from "../types/cart";
 
 const PENDING_ORDER_STORAGE_KEY =
-  "ingiday-pending-order-requests-v2";
+  "foryou-pending-order-requests-v2";
 const LEGACY_PENDING_ORDER_STORAGE_KEY =
-  "ingiday-pending-order-request-v1";
+  "foryou-pending-order-request-v1";
 const PENDING_ORDER_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const COMPLETED_REPLAY_MAX_AGE_MS = 24 * 60 * 60 * 1000;
 const MAX_PENDING_ORDER_REQUESTS = 20;

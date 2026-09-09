@@ -17,7 +17,7 @@ import {
 } from "../../utils/authSessionChange";
 import type { Banner, BannerInput } from "../../types/store";
 
-const LEGACY_STORAGE_KEY = "ingiday-banners";
+const LEGACY_STORAGE_KEY = "foryou-banners";
 
 type BannerRow = {
   id: string;

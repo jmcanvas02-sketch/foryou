@@ -5,7 +5,7 @@ import type { Product } from "../../types/product";
 import type { CartItem, SelectedVariant } from "../../types/cart";
 import type { SelectedCustomOptions } from "../../types/customProductOptions";
 
-const STORAGE_KEY = "ingiday-cart";
+const STORAGE_KEY = "foryou-cart";
 
 type CartContextValue = {
   items: CartItem[];

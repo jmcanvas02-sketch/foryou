@@ -1,6 +1,6 @@
 import type { UtmAttribution } from "../types/cart";
 
-const STORAGE_KEY = "ingiday-utm-attribution-v1";
+const STORAGE_KEY = "foryou-utm-attribution-v1";
 const MAX_AGE_MS = 90 * 24 * 60 * 60 * 1000;
 const MAX_VALUE_LENGTH = 200;
 

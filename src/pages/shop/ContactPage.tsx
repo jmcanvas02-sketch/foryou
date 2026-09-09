@@ -44,7 +44,7 @@ export default function ContactPage() {
       <section className="contact-page__hero">
         <div className="sf-container contact-page__hero-inner">
           <div>
-            <p className="contact-page__eyebrow">Liên hệ InGiDay</p>
+            <p className="contact-page__eyebrow">Liên hệ For You</p>
             <h1>Chạm đúng kênh, gặp đúng chủ shop</h1>
             <p className="contact-page__lead">
               Chọn cách liên hệ thuận tiện nhất. Các kênh bên dưới được cập nhật trực tiếp từ trang quản trị của cửa hàng.
@@ -115,7 +115,7 @@ export default function ContactPage() {
         <div className="contact-page__social-section">
           <div className="contact-page__section-heading">
             <p>Mạng xã hội</p>
-            <h2>Theo dõi InGiDay trên các nền tảng</h2>
+            <h2>Theo dõi For You trên các nền tảng</h2>
           </div>
 
           {socialLinks.length > 0 ? (

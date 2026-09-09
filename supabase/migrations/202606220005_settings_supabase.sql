@@ -1,7 +1,7 @@
 begin;
 
 alter table public.store_settings
-  add column if not exists shop_name text not null default 'InGiDay',
+  add column if not exists shop_name text not null default 'For You',
   add column if not exists phone text,
   add column if not exists email text,
   add column if not exists address text,

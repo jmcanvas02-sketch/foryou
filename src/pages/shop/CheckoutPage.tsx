@@ -12,7 +12,7 @@ import { formatCurrency } from "../../utils/currency";
 import { calculateShipping } from "../../utils/shipping";
 import { getCurrentUtmAttribution } from "../../utils/utmAttribution";
 
-const CHECKOUT_CUSTOMER_STORAGE_KEY = "ingiday-checkout-customer";
+const CHECKOUT_CUSTOMER_STORAGE_KEY = "foryou-checkout-customer";
 
 const initialCustomer: CheckoutCustomer = {
   fullName: "",

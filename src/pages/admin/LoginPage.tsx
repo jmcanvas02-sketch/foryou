@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import type { FormEvent } from "react";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { useAdminAuth } from "../../features/admin/AdminAuthContext";
@@ -46,7 +46,7 @@ export default function LoginPage() {
       </div>
 
       <p className="mt-6 text-sm font-bold uppercase tracking-[0.18em] text-[#006397]">
-        InGiDay Admin
+        For You Admin
       </p>
 
       <h1 className="mt-2 text-3xl font-black">Đăng nhập quản trị</h1>

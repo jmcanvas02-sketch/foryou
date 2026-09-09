@@ -1,6 +1,6 @@
-﻿$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Stop"
 
-$projectRoot = "D:\IN 3D\WEB\ingiday"
+$projectRoot = "D:\IN 3D\WEB\For You"
 $checkoutPath = Join-Path $projectRoot "src\pages\shop\CheckoutPage.tsx"
 
 if (-not (Test-Path $projectRoot)) {
@@ -28,7 +28,7 @@ const initialCustomer: CheckoutCustomer = {
 '@
 
 $newInitialBlock = @'
-const CHECKOUT_CUSTOMER_STORAGE_KEY = "ingiday-checkout-customer";
+const CHECKOUT_CUSTOMER_STORAGE_KEY = "foryou-checkout-customer";
 
 const initialCustomer: CheckoutCustomer = {
   fullName: "",
@@ -115,7 +115,7 @@ $content = $content.Replace($addressEffectMarker, $saveEffectBlock)
 )
 
 Write-Host "Đã thêm tự lưu thông tin nhận hàng." -ForegroundColor Green
-Write-Host "Giỏ hàng tiếp tục dùng localStorage hiện có: ingiday-cart" -ForegroundColor Green
+Write-Host "Giỏ hàng tiếp tục dùng localStorage hiện có: foryou-cart" -ForegroundColor Green
 Write-Host "Đang kiểm tra build..." -ForegroundColor Cyan
 
 npm run build
