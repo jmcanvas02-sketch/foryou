@@ -1,0 +1,7 @@
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SERVER_KEY=your-supabase-secret-or-service-role-key
+ADS_TOKEN_ENCRYPTION_KEY=base64-encoded-32-byte-key
+ADS_SERVER_DRY_RUN=true
+GA4_PROPERTY_ID=123456789
+GA4_SERVICE_ACCOUNT_EMAIL=ga4-reader@your-project.iam.gserviceaccount.com
+GA4_SERVICE_ACCOUNT_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY\n-----END PRIVATE KEY-----\n"

@@ -1,0 +1,226 @@
+/* Step 7: storefront responsive, accessibility, and rendering safeguards. */
+
+.storefront-shell {
+  min-width: 320px;
+  overflow-x: clip;
+}
+
+.storefront-main {
+  min-width: 0;
+}
+
+.storefront-main:focus {
+  outline: none;
+}
+
+.sf-skip-link {
+  position: fixed;
+  top: max(12px, env(safe-area-inset-top));
+  left: max(12px, env(safe-area-inset-left));
+  z-index: 1000;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--sf-ink);
+  border-radius: 999px;
+  padding: 0 18px;
+  color: #fff;
+  background: var(--sf-ink);
+  box-shadow: var(--sf-shadow-md);
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+  transform: translateY(calc(-100% - 32px));
+  transition: transform 180ms var(--sf-ease);
+}
+
+.sf-skip-link:focus,
+.sf-skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+.storefront-shell :where(
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  [tabindex]
+):focus-visible {
+  outline: 3px solid rgba(255, 95, 143, 0.52);
+  outline-offset: 3px;
+}
+
+.storefront-main :where(button, .sf-button) {
+  min-height: 44px;
+  touch-action: manipulation;
+}
+
+.storefront-main :where(input, select, textarea) {
+  max-width: 100%;
+}
+
+.storefront-main :where(img, video, canvas) {
+  max-width: 100%;
+}
+
+.storefront-main :where(.grid, .flex) > * {
+  min-width: 0;
+}
+
+.storefront-main :where(h1, h2, h3, p, strong, a, button) {
+  overflow-wrap: break-word;
+}
+
+.storefront-main [id] {
+  scroll-margin-top: 128px;
+}
+
+@supports (content-visibility: auto) {
+  .home-cute__benefits,
+  .home-cute__custom,
+  .product-detail__trust,
+  .product-detail__information {
+    content-visibility: auto;
+  }
+
+  .home-cute__benefits {
+    contain-intrinsic-size: 620px;
+  }
+
+  .home-cute__custom,
+  .product-detail__trust,
+  .product-detail__information {
+    contain-intrinsic-size: 520px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .storefront-shell .sf-container {
+    width: min(calc(100% - 56px), var(--sf-container));
+  }
+}
+
+@media (min-width: 1366px) {
+  .storefront-shell .sf-container {
+    width: min(calc(100% - 72px), var(--sf-container));
+  }
+}
+
+@media (min-width: 1440px) {
+  .storefront-shell .sf-container {
+    width: min(calc(100% - 96px), var(--sf-container));
+  }
+}
+
+@media (max-width: 1024px) {
+  .storefront-shell .sf-container {
+    width: min(calc(100% - 40px), var(--sf-container));
+  }
+
+  .storefront-main [id] {
+    scroll-margin-top: 112px;
+  }
+}
+
+@media (max-width: 768px) {
+  .storefront-shell .sf-container {
+    width: min(calc(100% - 32px), var(--sf-container));
+  }
+
+  .storefront-main :where(input, select, textarea) {
+    font-size: 16px;
+  }
+
+  .storefront-main [id] {
+    scroll-margin-top: 104px;
+  }
+}
+
+@media (max-width: 430px) {
+  .storefront-shell .sf-container {
+    width: calc(100% - 24px);
+  }
+
+  .storefront-main :where(h1, h2, h3) {
+    text-wrap: balance;
+  }
+
+  .storefront-main p {
+    text-wrap: pretty;
+  }
+
+  .storefront-main :where(.sf-button) {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .storefront-shell .sf-container {
+    width: calc(100% - 20px);
+  }
+
+  .storefront-main :where(button, .sf-button) {
+    min-height: 46px;
+  }
+}
+
+@media (max-width: 375px) {
+  .storefront-shell .sf-container {
+    width: calc(100% - 18px);
+  }
+}
+
+@media (hover: none) {
+  .storefront-shell .sf-button:hover,
+  .home-cute__collection-card:hover,
+  .product-detail__actions button:hover:not(:disabled),
+  .product-detail__thumbnails button:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .storefront-shell,
+  .storefront-shell *,
+  .storefront-shell *::before,
+  .storefront-shell *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+
+  .sf-skip-link {
+    transition: none;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .storefront-shell :where(
+    article,
+    section,
+    aside,
+    input,
+    select,
+    textarea,
+    button
+  ) {
+    border-color: rgba(47, 38, 50, 0.34);
+  }
+
+  .storefront-shell :where(a, button, input, select, textarea):focus-visible {
+    outline-color: var(--sf-ink);
+  }
+}
+
+@media (forced-colors: active) {
+  .sf-skip-link,
+  .storefront-shell .sf-button,
+  .storefront-shell button {
+    border: 1px solid ButtonText;
+    forced-color-adjust: auto;
+  }
+}

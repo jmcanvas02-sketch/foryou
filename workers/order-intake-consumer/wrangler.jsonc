@@ -1,0 +1,38 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "foryou-order-intake-consumer",
+  "main": "index.ts",
+  "compatibility_date": "2026-07-28",
+  "workers_dev": false,
+  "vars": {
+    "SUPABASE_URL": "REPLACE_WITH_FORYOU_SUPABASE_URL"
+  },
+  "secrets": {
+    "required": [
+      "SUPABASE_SERVER_KEY"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "ORDER_INTAKE_DB",
+      "database_name": "foryou-order-intake",
+      "database_id": "REPLACE_WITH_FORYOU_D1_DATABASE_ID"
+    }
+  ],
+  "queues": {
+    "consumers": [
+      {
+        "queue": "foryou-order-intake",
+        "max_batch_size": 10,
+        "max_batch_timeout": 5,
+        "max_retries": 10,
+        "dead_letter_queue": "foryou-order-intake-dlq"
+      }
+    ]
+  },
+  "triggers": {
+    "crons": [
+      "*/5 * * * *"
+    ]
+  }
+}
