@@ -17,7 +17,7 @@ import {
 } from "../../utils/authSessionChange";
 import type { Coupon, CouponInput } from "../../types/store";
 
-const LEGACY_STORAGE_KEY = "ingiday-coupons";
+const LEGACY_STORAGE_KEY = "foryou-coupons";
 
 type CouponRow = {
   id: string;

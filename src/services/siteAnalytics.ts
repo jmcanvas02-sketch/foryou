@@ -6,9 +6,9 @@ import type { Product } from "../types/product";
 const CLARITY_PROJECT_ID = import.meta.env.VITE_CLARITY_PROJECT_ID?.trim() ?? "";
 const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID?.trim() ?? "";
 const CHECKOUT_SENT_STORAGE_PREFIX =
-  "ingiday-site-analytics-checkout-sent-v1";
+  "foryou-site-analytics-checkout-sent-v1";
 const PURCHASE_SENT_STORAGE_PREFIX =
-  "ingiday-site-analytics-purchase-sent-v1";
+  "foryou-site-analytics-purchase-sent-v1";
 
 type Gtag = (...args: unknown[]) => void;
 
@@ -121,9 +121,9 @@ function ensureGa() {
       send_page_view: false,
     });
 
-    if (!document.getElementById("ingiday-google-tag")) {
+    if (!document.getElementById("foryou-google-tag")) {
       const script = document.createElement("script");
-      script.id = "ingiday-google-tag";
+      script.id = "foryou-google-tag";
       script.async = true;
       script.src =
         "https://www.googletagmanager.com/gtag/js?id=" +

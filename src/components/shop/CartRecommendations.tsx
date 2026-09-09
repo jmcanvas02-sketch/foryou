@@ -8,7 +8,7 @@ import {
 import ProductCard from "./ProductCard";
 
 const SESSION_SEED_KEY =
-  "ingiday-cart-recommendations-seed-v1";
+  "foryou-cart-recommendations-seed-v1";
 
 function createSessionSeed() {
   const fallbackSeed = `${Date.now()}-${Math.random()}`;

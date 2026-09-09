@@ -58,7 +58,7 @@ export default function ProductShortLinkPage() {
     return (
       <section className="mx-auto my-16 max-w-xl rounded-3xl bg-white p-8 text-center shadow-sm">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#006397]">
-          InGiDay
+          For You
         </p>
         <h1 className="mt-3 text-2xl font-black text-[#091d2e]">
           Đang mở sản phẩm...
@@ -70,7 +70,7 @@ export default function ProductShortLinkPage() {
   return (
     <section className="mx-auto my-16 max-w-xl rounded-3xl bg-white p-8 text-center shadow-sm">
       <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#006397]">
-        InGiDay
+        For You
       </p>
       <h1 className="mt-3 text-2xl font-black text-[#091d2e]">
         {state === "not_found"

@@ -1,4 +1,4 @@
-﻿begin;
+begin;
 
 alter table public.orders
   add column if not exists inventory_reserved boolean not null default false;
@@ -660,7 +660,7 @@ insert into public.coupons (
   active
 )
 values
-  ('INGIDAY10', 'percent', 10, 100000, 30000, 100, true),
+  ('FORYOU10', 'percent', 10, 100000, 30000, 100, true),
   ('GIAM20K', 'fixed', 20000, 200000, null, 50, true)
 on conflict do nothing;
 

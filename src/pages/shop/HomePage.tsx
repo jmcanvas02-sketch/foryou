@@ -281,10 +281,10 @@ export default function HomePage() {
 
   const messengerUrl = settings.messengerUrl.trim();
   const heroImageUrl =
-    banner?.imageUrl?.trim() || "/images/ingiday-hero-default.webp";
+    banner?.imageUrl?.trim() || "/images/foryou-hero-default.webp";
   const heroImageAlt =
     banner?.imageAlt?.trim() ||
-    "Móc khóa thỏ, đèn decor và mô hình robot 3D phong cách InGiDay";
+    "Móc khóa thỏ, đèn decor và mô hình robot 3D phong cách For You";
 
   const featuredHeroProducts = featuredProducts
     .filter((item) => Boolean(primaryImage(item)))
@@ -472,7 +472,7 @@ export default function HomePage() {
               aria-label={
                 activeHeroProduct
                   ? `Xem sản phẩm ${activeHeroProduct.name}`
-                  : "Khám phá sản phẩm InGiDay"
+                  : "Khám phá sản phẩm For You"
               }
               style={{
                 backgroundColor:
@@ -874,7 +874,7 @@ export default function HomePage() {
           </h2>
           <p>
             {settings.customPrintDescription ||
-              "Không cần biết thiết kế 3D. Chỉ cần gửi hình, phác thảo hoặc kể ý tưởng. InGiDay sẽ cùng bạn chốt kiểu dáng, màu sắc và kích thước phù hợp."}
+              "Không cần biết thiết kế 3D. Chỉ cần gửi hình, phác thảo hoặc kể ý tưởng. For You sẽ cùng bạn chốt kiểu dáng, màu sắc và kích thước phù hợp."}
           </p>
 
           <div className="home-cute__custom-steps">
@@ -930,7 +930,7 @@ export default function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Nhắn InGiDay
+                Nhắn For You
               </a>
             )}
           </div>
@@ -952,7 +952,7 @@ export default function HomePage() {
             src={
               customPreviewImage
                 ? optimizeCloudinaryUrl(customPreviewImage.url, 1200)
-                : "/images/ingiday-hero-default.webp"
+                : "/images/foryou-hero-default.webp"
             }
             srcSet={
               customPreviewImage

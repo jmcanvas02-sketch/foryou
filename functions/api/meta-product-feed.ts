@@ -41,7 +41,7 @@ type FeedItem = {
   brand: "IGD";
 };
 
-const SITE_ORIGIN = "https://ingiday.xyz";
+const SITE_ORIGIN = "https://foryou.invalid";
 const MAX_TITLE_LENGTH = 150;
 const MAX_DESCRIPTION_LENGTH = 5_000;
 
@@ -283,7 +283,7 @@ export async function onRequestGet(
         "Cache-Control":
           "public, max-age=300, s-maxage=300",
         "Content-Disposition":
-          'inline; filename="ingiday-meta-product-feed.csv"',
+          'inline; filename="foryou-meta-product-feed.csv"',
         "Content-Type":
           "text/csv; charset=utf-8",
         "Referrer-Policy": "no-referrer",

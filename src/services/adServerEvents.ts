@@ -6,11 +6,11 @@ import {
 } from "./adRuntime";
 
 const ANONYMOUS_ID_STORAGE_KEY =
-  "ingiday-ads-anonymous-id-v1";
+  "foryou-ads-anonymous-id-v1";
 const SERVER_EVENT_QUEUE_STORAGE_KEY =
-  "ingiday-ads-server-event-queue-v1";
+  "foryou-ads-server-event-queue-v1";
 const CHECKOUT_CUSTOMER_STORAGE_KEY =
-  "ingiday-checkout-customer";
+  "foryou-checkout-customer";
 const SERVER_EVENT_QUEUE_MAX_ITEMS = 200;
 const SERVER_EVENT_QUEUE_MAX_AGE_MS =
   7 * 24 * 60 * 60 * 1_000;
@@ -305,7 +305,7 @@ function writeQueue(
     );
   } catch (error) {
     debugWarn(
-      "[InGiDay Ads Server] Không thể lưu hàng đợi CAPI",
+      "[For You Ads Server] Không thể lưu hàng đợi CAPI",
       error,
     );
   }
@@ -392,7 +392,7 @@ async function postQueuedServerAdEvent(
       intake.eventId === item.envelope.eventId
     ) {
       debugInfo(
-        "[InGiDay Ads Server] Đã tiếp nhận",
+        "[For You Ads Server] Đã tiếp nhận",
         {
           platform: item.envelope.platform,
           sourceId: item.envelope.sourceId,
@@ -405,7 +405,7 @@ async function postQueuedServerAdEvent(
 
     if (isRetryableIntakeStatus(response.status)) {
       debugWarn(
-        "[InGiDay Ads Server] CAPI intake tạm thời thất bại",
+        "[For You Ads Server] CAPI intake tạm thời thất bại",
         response.status,
         item.envelope.eventId,
       );
@@ -413,14 +413,14 @@ async function postQueuedServerAdEvent(
     }
 
     debugWarn(
-      "[InGiDay Ads Server] Loại sự kiện CAPI không hợp lệ khỏi hàng đợi",
+      "[For You Ads Server] Loại sự kiện CAPI không hợp lệ khỏi hàng đợi",
       response.status,
       item.envelope.eventId,
     );
     return "discard";
   } catch (error) {
     debugWarn(
-      "[InGiDay Ads Server] Lỗi mạng, giữ sự kiện trong hàng đợi",
+      "[For You Ads Server] Lỗi mạng, giữ sự kiện trong hàng đợi",
       error,
     );
     return "retry";
@@ -461,9 +461,9 @@ type ServerEventQueueLease = {
 };
 
 const SERVER_EVENT_QUEUE_LOCK_NAME =
-  "ingiday-ads-server-event-queue-flush-v1";
+  "foryou-ads-server-event-queue-flush-v1";
 const SERVER_EVENT_QUEUE_LEASE_KEY =
-  "ingiday-ads-server-event-queue-lease-v1";
+  "foryou-ads-server-event-queue-lease-v1";
 const SERVER_EVENT_QUEUE_LEASE_DURATION_MS = 30_000;
 const SERVER_EVENT_QUEUE_LEASE_REFRESH_MS = 10_000;
 const SERVER_EVENT_QUEUE_LOCK_RETRY_DELAY_MS = 1_000;
@@ -618,7 +618,7 @@ async function withServerEventQueueCrossTabLock(
     } catch (error) {
       if (isAdsDebugEnabled()) {
         console.warn(
-          "[InGiDay Ads Server] Navigator lock lỗi, dùng lease fallback",
+          "[For You Ads Server] Navigator lock lỗi, dùng lease fallback",
           error,
         );
       }

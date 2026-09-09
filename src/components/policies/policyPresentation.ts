@@ -79,7 +79,7 @@ const VISUALS: Record<string, PolicyVisual> = {
 
 const FALLBACK_VISUAL: PolicyVisual = {
   icon: "📌",
-  eyebrow: "Thông tin InGiDay",
+  eyebrow: "Thông tin For You",
   accent: "#006397",
   accentSoft: "#dff4ff",
   gradient:

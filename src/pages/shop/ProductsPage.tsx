@@ -233,7 +233,7 @@ export default function ProductsPage() {
         <div className="sf-container py-12 sm:py-16">
           <span className="inline-flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.16em] text-[var(--sf-pink-strong)]">
             <span className="h-2 w-2 rounded-full bg-[var(--sf-pink)] shadow-[0_0_0_5px_rgba(255,95,143,0.10)]" />
-            Cửa hàng InGiDay
+            Cửa hàng For You
           </span>
 
           <h1 className="mt-4 max-w-3xl text-4xl font-black tracking-[-0.055em] text-[var(--sf-ink)] sm:text-5xl lg:text-6xl">

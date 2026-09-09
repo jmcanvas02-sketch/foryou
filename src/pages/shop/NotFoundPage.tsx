@@ -26,8 +26,8 @@ export default function NotFoundPage() {
   const [query, setQuery] = useState("");
 
   usePageMeta({
-    title: "Không tìm thấy trang | InGiDay",
-    description: "Trang bạn đang tìm không tồn tại trên InGiDay.",
+    title: "Không tìm thấy trang | For You",
+    description: "Trang bạn đang tìm không tồn tại trên For You.",
   });
 
   function handleSearch(event: FormEvent) {

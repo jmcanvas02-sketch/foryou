@@ -1,4 +1,4 @@
-﻿/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, useRef } from "react";
 import type { ReactNode } from "react";
 import type { CartItem } from "../../types/cart";
@@ -11,9 +11,9 @@ import {
   getSessionUserId,
 } from "../../utils/authSessionChange";
 
-const LEGACY_PRODUCTS_KEY = "ingiday-admin-products";
-const LEGACY_CATEGORIES_KEY = "ingiday-admin-categories";
-const SEED_MARKER_KEY = "ingiday-supabase-products-seeded-v1";
+const LEGACY_PRODUCTS_KEY = "foryou-admin-products";
+const LEGACY_CATEGORIES_KEY = "foryou-admin-categories";
+const SEED_MARKER_KEY = "foryou-supabase-products-seeded-v1";
 
 type StoreActionResult<T = undefined> = {
   success: boolean;

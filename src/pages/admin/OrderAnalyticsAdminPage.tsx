@@ -297,7 +297,7 @@ function csvCell(value: string | number) {
 
 function downloadCsv(data: OrderAnalyticsData, dateRange: DateRange) {
   const rows: Array<Array<string | number>> = [
-    ["PHÂN TÍCH ĐƠN HÀNG INGIDAY"],
+    ["PHÂN TÍCH ĐƠN HÀNG FOR YOU"],
     ["Khoảng thời gian", `${formatDateOnly(dateRange.start)} - ${formatDateOnly(dateRange.end)}`],
     ["Trạng thái", data.period.status ?? "Tất cả trạng thái"],
     [],
@@ -1297,7 +1297,7 @@ export default function OrderAnalyticsAdminPage() {
 
       <div className="flex flex-col justify-between gap-2 px-1 pt-4 pb-2 text-[10px] text-[#94a2b2] sm:flex-row">
         <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-[#cdebdc] bg-[#eaf9f3] px-2.5 py-1 font-bold text-[#247654]">
-          ● Dữ liệu trực tiếp từ đơn hàng InGiDay
+          ● Dữ liệu trực tiếp từ đơn hàng For You
         </span>
         <span>
           Cập nhật lần cuối: {data ? formatDateTime(data.generatedAt) : "—"} · Múi giờ Việt Nam (GMT+7)

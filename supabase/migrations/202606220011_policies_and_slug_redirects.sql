@@ -38,7 +38,7 @@ values
   $policy$
 ## Phạm vi giao hàng
 
-InGiDay tiếp nhận đơn hàng trên toàn quốc thông qua đơn vị vận chuyển phù hợp với khu vực nhận hàng.
+For You tiếp nhận đơn hàng trên toàn quốc thông qua đơn vị vận chuyển phù hợp với khu vực nhận hàng.
 
 ## Phí vận chuyển
 
@@ -50,14 +50,14 @@ Sản phẩm có sẵn được chuẩn bị và bàn giao cho đơn vị vận 
 
 ## Kiểm tra thông tin nhận hàng
 
-Khách hàng cần cung cấp đúng họ tên, số điện thoại và địa chỉ. InGiDay có thể liên hệ để xác nhận lại khi thông tin chưa đầy đủ hoặc có dấu hiệu nhầm lẫn.
+Khách hàng cần cung cấp đúng họ tên, số điện thoại và địa chỉ. For You có thể liên hệ để xác nhận lại khi thông tin chưa đầy đủ hoặc có dấu hiệu nhầm lẫn.
 
 ## Sự cố giao hàng
 
-Khi đơn giao chậm, thất lạc hoặc kiện hàng có dấu hiệu hư hỏng, khách hàng vui lòng liên hệ InGiDay để shop phối hợp với đơn vị vận chuyển xử lý.
+Khi đơn giao chậm, thất lạc hoặc kiện hàng có dấu hiệu hư hỏng, khách hàng vui lòng liên hệ For You để shop phối hợp với đơn vị vận chuyển xử lý.
 $policy$,
-  'Chính sách giao hàng | InGiDay',
-  'Thông tin phí vận chuyển, thời gian xử lý và giao nhận đơn hàng tại InGiDay.',
+  'Chính sách giao hàng | For You',
+  'Thông tin phí vận chuyển, thời gian xử lý và giao nhận đơn hàng tại For You.',
   true,
   10
 ),
@@ -67,7 +67,7 @@ $policy$,
   $policy$
 ## Trường hợp được hỗ trợ
 
-InGiDay tiếp nhận yêu cầu khi sản phẩm giao sai mẫu, sai số lượng, thiếu phụ kiện hoặc bị hư hỏng do quá trình vận chuyển.
+For You tiếp nhận yêu cầu khi sản phẩm giao sai mẫu, sai số lượng, thiếu phụ kiện hoặc bị hư hỏng do quá trình vận chuyển.
 
 ## Điều kiện sản phẩm
 
@@ -79,14 +79,14 @@ Sản phẩm được làm theo nội dung, kích thước hoặc yêu cầu ri�
 
 ## Cách gửi yêu cầu
 
-Khách hàng liên hệ InGiDay và cung cấp mã đơn, mô tả tình trạng cùng hình ảnh liên quan. Shop sẽ kiểm tra và phản hồi phương án xử lý phù hợp.
+Khách hàng liên hệ For You và cung cấp mã đơn, mô tả tình trạng cùng hình ảnh liên quan. Shop sẽ kiểm tra và phản hồi phương án xử lý phù hợp.
 
 ## Chi phí đổi trả
 
-Nếu lỗi thuộc về InGiDay hoặc đơn vị vận chuyển, shop chịu chi phí xử lý hợp lý. Các trường hợp khác sẽ được trao đổi trước khi thực hiện.
+Nếu lỗi thuộc về For You hoặc đơn vị vận chuyển, shop chịu chi phí xử lý hợp lý. Các trường hợp khác sẽ được trao đổi trước khi thực hiện.
 $policy$,
-  'Chính sách đổi trả | InGiDay',
-  'Điều kiện và quy trình hỗ trợ đổi trả sản phẩm tại InGiDay.',
+  'Chính sách đổi trả | For You',
+  'Điều kiện và quy trình hỗ trợ đổi trả sản phẩm tại For You.',
   true,
   20
 ),
@@ -96,7 +96,7 @@ $policy$,
   $policy$
 ## Phạm vi bảo hành
 
-Sản phẩm được bảo hành theo thông tin công bố tại trang chi tiết sản phẩm hoặc nội dung đã được InGiDay xác nhận khi đặt hàng.
+Sản phẩm được bảo hành theo thông tin công bố tại trang chi tiết sản phẩm hoặc nội dung đã được For You xác nhận khi đặt hàng.
 
 ## Trường hợp được hỗ trợ
 
@@ -108,14 +108,14 @@ Bảo hành không áp dụng với hư hỏng do va đập mạnh, nhiệt đ�
 
 ## Quy trình
 
-Khách hàng cung cấp mã đơn, hình ảnh hoặc video mô tả lỗi. Sau khi kiểm tra, InGiDay sẽ thông báo phương án sửa chữa, thay thế hoặc hỗ trợ khác.
+Khách hàng cung cấp mã đơn, hình ảnh hoặc video mô tả lỗi. Sau khi kiểm tra, For You sẽ thông báo phương án sửa chữa, thay thế hoặc hỗ trợ khác.
 
 ## Sản phẩm không có thời hạn bảo hành riêng
 
 Với sản phẩm không ghi thời hạn bảo hành, shop vẫn tiếp nhận phản hồi và hỗ trợ trên tinh thần hợp lý tùy tình trạng thực tế.
 $policy$,
-  'Chính sách bảo hành | InGiDay',
-  'Phạm vi và quy trình bảo hành sản phẩm InGiDay.',
+  'Chính sách bảo hành | For You',
+  'Phạm vi và quy trình bảo hành sản phẩm For You.',
   true,
   30
 ),
@@ -125,7 +125,7 @@ $policy$,
   $policy$
 ## Thông tin được thu thập
 
-InGiDay thu thập các thông tin cần thiết để xử lý đơn hàng như họ tên, số điện thoại, địa chỉ nhận hàng, nội dung ghi chú và lịch sử giao dịch.
+For You thu thập các thông tin cần thiết để xử lý đơn hàng như họ tên, số điện thoại, địa chỉ nhận hàng, nội dung ghi chú và lịch sử giao dịch.
 
 ## Mục đích sử dụng
 
@@ -133,7 +133,7 @@ Thông tin được dùng để xác nhận đơn, giao hàng, hỗ trợ khách
 
 ## Phạm vi chia sẻ
 
-InGiDay chỉ chia sẻ dữ liệu cần thiết cho đơn vị vận chuyển, nhà cung cấp dịch vụ hạ tầng hoặc cơ quan có thẩm quyền khi pháp luật yêu cầu. Shop không bán thông tin khách hàng.
+For You chỉ chia sẻ dữ liệu cần thiết cho đơn vị vận chuyển, nhà cung cấp dịch vụ hạ tầng hoặc cơ quan có thẩm quyền khi pháp luật yêu cầu. Shop không bán thông tin khách hàng.
 
 ## Bảo vệ dữ liệu
 
@@ -141,10 +141,10 @@ Website áp dụng các biện pháp kỹ thuật phù hợp để hạn chế t
 
 ## Yêu cầu liên quan đến dữ liệu
 
-Khách hàng có thể liên hệ InGiDay để hỏi, cập nhật hoặc yêu cầu xử lý thông tin cá nhân trong phạm vi pháp luật và nghĩa vụ lưu trữ đơn hàng cho phép.
+Khách hàng có thể liên hệ For You để hỏi, cập nhật hoặc yêu cầu xử lý thông tin cá nhân trong phạm vi pháp luật và nghĩa vụ lưu trữ đơn hàng cho phép.
 $policy$,
-  'Chính sách bảo mật | InGiDay',
-  'Cách InGiDay thu thập, sử dụng và bảo vệ thông tin khách hàng.',
+  'Chính sách bảo mật | For You',
+  'Cách For You thu thập, sử dụng và bảo vệ thông tin khách hàng.',
   true,
   40
 ),
@@ -158,11 +158,11 @@ Khi truy cập website hoặc đặt hàng, khách hàng xác nhận đã đọc
 
 ## Thông tin sản phẩm
 
-InGiDay cố gắng trình bày hình ảnh, màu sắc, kích thước và mô tả chính xác. Sản phẩm in 3D có thể có sai khác nhỏ đặc trưng của quá trình sản xuất nhưng không làm thay đổi công năng chính.
+For You cố gắng trình bày hình ảnh, màu sắc, kích thước và mô tả chính xác. Sản phẩm in 3D có thể có sai khác nhỏ đặc trưng của quá trình sản xuất nhưng không làm thay đổi công năng chính.
 
 ## Xác nhận đơn hàng
 
-Đơn hàng chỉ được xem là hợp lệ khi hệ thống tạo mã đơn thành công. InGiDay có thể liên hệ để xác minh thông tin, số lượng lớn hoặc yêu cầu in riêng.
+Đơn hàng chỉ được xem là hợp lệ khi hệ thống tạo mã đơn thành công. For You có thể liên hệ để xác minh thông tin, số lượng lớn hoặc yêu cầu in riêng.
 
 ## Hành vi không được chấp nhận
 
@@ -170,10 +170,10 @@ Khách hàng không được lợi dụng website để tạo đơn giả, can t
 
 ## Thay đổi điều khoản
 
-InGiDay có thể cập nhật nội dung để phù hợp với hoạt động thực tế. Phiên bản đang hiển thị trên website là phiên bản được áp dụng tại thời điểm sử dụng.
+For You có thể cập nhật nội dung để phù hợp với hoạt động thực tế. Phiên bản đang hiển thị trên website là phiên bản được áp dụng tại thời điểm sử dụng.
 $policy$,
-  'Điều khoản sử dụng | InGiDay',
-  'Các điều khoản áp dụng khi truy cập và đặt hàng trên website InGiDay.',
+  'Điều khoản sử dụng | For You',
+  'Các điều khoản áp dụng khi truy cập và đặt hàng trên website For You.',
   true,
   50
 )

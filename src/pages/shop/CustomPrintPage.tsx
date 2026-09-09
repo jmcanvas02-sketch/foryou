@@ -142,7 +142,7 @@ export default function CustomPrintPage() {
               Ba bước gọn gàng, dễ trao đổi ♡
             </h2>
             <p className="mt-3 text-sm leading-6 text-[var(--sf-ink-soft)]">
-              Không cần biết dựng 3D. Bạn chỉ cần gửi ý tưởng, phần còn lại cùng InGiDay trao đổi từng bước.
+              Không cần biết dựng 3D. Bạn chỉ cần gửi ý tưởng, phần còn lại cùng For You trao đổi từng bước.
             </p>
           </div>
 

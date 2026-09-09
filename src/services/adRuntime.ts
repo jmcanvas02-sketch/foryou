@@ -353,11 +353,11 @@ function ensureMetaBootstrap() {
   fbq.queue = fbq.queue ?? [];
   window.fbq = fbq;
 
-  if (!document.querySelector('script[data-ingiday-meta-pixel="true"]')) {
+  if (!document.querySelector('script[data-foryou-meta-pixel="true"]')) {
     const script = document.createElement("script");
     script.async = true;
     script.src = "https://connect.facebook.net/en_US/fbevents.js";
-    script.dataset.ingidayMetaPixel = "true";
+    script.dataset.foryouMetaPixel = "true";
     document.head.appendChild(script);
   }
 
@@ -408,7 +408,7 @@ function createTikTokQueue(source: RuntimeAdSource) {
   const script = document.createElement("script");
   script.type = "text/javascript";
   script.async = true;
-  script.dataset.ingidayTiktokPixel = source.pixelId;
+  script.dataset.foryouTiktokPixel = source.pixelId;
   script.src =
     "https://analytics.tiktok.com/i18n/pixel/events.js" +
     `?sdkid=${encodeURIComponent(source.pixelId)}` +
@@ -482,7 +482,7 @@ export function sendBrowserAdEvent(
   }
 
   if (DEBUG_ENABLED) {
-    console.info("[InGiDay Ads Debug]", {
+    console.info("[For You Ads Debug]", {
       platform: source.platform,
       pixelId: source.pixelId,
       sourceId: source.id,
@@ -500,7 +500,7 @@ export function sendBrowserAdEvent(
       const dedupKey = claimMetaBrowserEvent(source, eventName, eventId);
       if (!dedupKey) {
         if (DEBUG_ENABLED) {
-          console.info("[InGiDay Ads Debug] Bỏ qua browser event trùng", {
+          console.info("[For You Ads Debug] Bỏ qua browser event trùng", {
             pixelId: source.pixelId,
             eventName,
             eventId,

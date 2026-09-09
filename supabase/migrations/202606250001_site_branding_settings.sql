@@ -6,25 +6,25 @@ alter table public.store_settings
   add column if not exists social_share_image_url text,
   add column if not exists social_share_image_public_id text,
   add column if not exists social_share_title text
-    default 'InGiDay | Sản phẩm in 3D đáng yêu',
+    default 'For You | Sản phẩm in 3D đáng yêu',
   add column if not exists social_share_description text
-    default 'Khám phá móc khóa, mô hình mini và các sản phẩm in 3D độc đáo từ InGiDay.';
+    default 'Khám phá móc khóa, mô hình mini và các sản phẩm in 3D độc đáo từ For You.';
 
 alter table public.store_settings
   alter column social_share_title
-    set default 'InGiDay | Sản phẩm in 3D đáng yêu',
+    set default 'For You | Sản phẩm in 3D đáng yêu',
   alter column social_share_description
-    set default 'Khám phá móc khóa, mô hình mini và các sản phẩm in 3D độc đáo từ InGiDay.';
+    set default 'Khám phá móc khóa, mô hình mini và các sản phẩm in 3D độc đáo từ For You.';
 
 update public.store_settings
 set
   social_share_title = coalesce(
     nullif(btrim(social_share_title), ''),
-    'InGiDay | Sản phẩm in 3D đáng yêu'
+    'For You | Sản phẩm in 3D đáng yêu'
   ),
   social_share_description = coalesce(
     nullif(btrim(social_share_description), ''),
-    'Khám phá móc khóa, mô hình mini và các sản phẩm in 3D độc đáo từ InGiDay.'
+    'Khám phá móc khóa, mô hình mini và các sản phẩm in 3D độc đáo từ For You.'
   );
 
 alter table public.store_settings

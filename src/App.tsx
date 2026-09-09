@@ -18,7 +18,7 @@ function AppLoading() {
       <div className="text-center">
         <div className="mx-auto h-11 w-11 animate-spin rounded-full border-4 border-[#d1e4fb] border-t-[#006397]" />
         <p className="mt-4 font-semibold text-[#3f4850]">
-          Đang mở InGiDay...
+          Đang mở For You...
         </p>
       </div>
     </main>

@@ -1,6 +1,6 @@
-﻿export async function onRequestGet() {
+export async function onRequestGet() {
   return Response.json({
     success: true,
-    project: "InGiDay",
+    project: "For You",
   });
 }

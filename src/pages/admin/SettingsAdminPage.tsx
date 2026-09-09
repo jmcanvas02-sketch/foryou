@@ -1,4 +1,4 @@
-﻿/* eslint-disable react-hooks/set-state-in-effect */
+/* eslint-disable react-hooks/set-state-in-effect */
 import { useEffect, useRef, useState } from "react";
 import type { ChangeEvent, FormEvent } from "react";
 import { useSettings } from "../../features/settings/SettingsContext";
@@ -546,7 +546,7 @@ export default function SettingsAdminPage() {
                   />
                 ) : (
                   <span className="text-center text-xl font-black text-[#006397]">
-                    {form.storeName || "InGiDay"}
+                    {form.storeName || "For You"}
                   </span>
                 )}
               </div>

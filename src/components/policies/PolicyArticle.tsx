@@ -237,7 +237,7 @@ export default function PolicyArticle({
                 {visual.eyebrow}
               </p>
               <p className="mt-1 text-sm font-medium text-[#64717b]">
-                Thông tin chính thức từ InGiDay
+                Thông tin chính thức từ For You
               </p>
             </div>
           </div>

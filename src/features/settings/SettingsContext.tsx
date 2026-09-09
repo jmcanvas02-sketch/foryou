@@ -1,4 +1,4 @@
-﻿/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react-refresh/only-export-components */
 import {
   createContext,
   useCallback,
@@ -23,14 +23,14 @@ import {
 } from "../../utils/externalUrl";
 import type { StoreSocialLinks } from "../../utils/externalUrl";
 
-const LEGACY_STORAGE_KEY = "ingiday-settings";
+const LEGACY_STORAGE_KEY = "foryou-settings";
 const DEFAULT_SOCIAL_SHARE_TITLE =
-  "InGiDay | Sản phẩm in 3D đáng yêu";
+  "For You | Sản phẩm in 3D đáng yêu";
 const DEFAULT_SOCIAL_SHARE_DESCRIPTION =
-  "Khám phá móc khóa, mô hình mini và các sản phẩm in 3D độc đáo từ InGiDay.";
+  "Khám phá móc khóa, mô hình mini và các sản phẩm in 3D độc đáo từ For You.";
 
 const initialSettings: StoreSettings = {
-  storeName: "InGiDay",
+  storeName: "For You",
   phone: "",
   email: "",
   address: "",
@@ -246,7 +246,7 @@ function settingsToRow(value: StoreSettings) {
     value.socialShareImageUrl.trim();
 
   return {
-    shop_name: value.storeName.trim() || "InGiDay",
+    shop_name: value.storeName.trim() || "For You",
     phone: value.phone.trim() || null,
     email: value.email.trim() || null,
     address: value.address.trim() || null,

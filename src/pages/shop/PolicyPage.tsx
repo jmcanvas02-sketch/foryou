@@ -32,9 +32,9 @@ export default function PolicyPage({
   const [retryVersion, setRetryVersion] = useState(0);
 
   usePageMeta({
-    title: policy?.seoTitle || "Chính sách | InGiDay",
+    title: policy?.seoTitle || "Chính sách | For You",
     description:
-      policy?.seoDescription || "Thông tin chính sách của InGiDay.",
+      policy?.seoDescription || "Thông tin chính sách của For You.",
     canonicalPath: `/${policySlug}`,
   });
 
@@ -192,7 +192,7 @@ export default function PolicyPage({
 
             <div>
               <p className="text-[11px] font-black uppercase tracking-[0.16em] text-[var(--sf-pink-strong)]">
-                Thông tin InGiDay
+                Thông tin For You
               </p>
               <h1 className="mt-3 text-4xl font-black tracking-[-0.055em] text-[var(--sf-ink)] sm:text-5xl">
                 {policy.title}

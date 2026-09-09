@@ -129,7 +129,7 @@ async function uploadBannerImage(file: File) {
     }),
   );
   formData.append("upload_preset", uploadPreset);
-  formData.append("tags", "ingiday,banner");
+  formData.append("tags", "foryou,banner");
 
   const response = await fetch(
     `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`,
@@ -244,7 +244,7 @@ export default function BannersAdminPage() {
           current.imageAlt ||
           current.title ||
           current.internalName ||
-          "Banner InGiDay",
+          "Banner For You",
       }));
       showMessage(
         "Đã tải ảnh banner lên Cloudinary và cắt theo tỷ lệ 16:9.",

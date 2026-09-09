@@ -503,8 +503,8 @@ export function OrdersProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let mounted = true;
 
-    localStorage.removeItem("ingiday-orders");
-    localStorage.removeItem("ingiday-last-order");
+    localStorage.removeItem("foryou-orders");
+    localStorage.removeItem("foryou-last-order");
 
     void supabase.auth.getSession().then(({ data }) => {
       authUserIdRef.current = getSessionUserId(data.session);
@@ -1035,7 +1035,7 @@ export function OrdersProvider({ children }: { children: ReactNode }) {
           normalizedAddressStatus: "missing",
         };
 
-        sessionStorage.setItem("ingiday-last-order", JSON.stringify(created));
+        sessionStorage.setItem("foryou-last-order", JSON.stringify(created));
 
         const {
           data: { session },
