@@ -64,7 +64,7 @@ where search_text = '';
 create index if not exists
 products_search_text_trgm_idx
 on public.products
-using gin (search_text gin_trgm_ops);
+using gin (search_text extensions.gin_trgm_ops);
 
 create index if not exists
 products_public_catalog_idx
